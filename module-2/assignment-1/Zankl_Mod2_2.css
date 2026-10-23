@@ -1,0 +1,59 @@
+/*
+    Name: Nicholas Zankl
+    Date: October 25, 2026
+    Assignment: CSD-340 Module 2.2 Assignment - Building a Web Page Exercise, Part 2
+    Purpose: Applies structural, typographic, and interactive styling rules for the CSD 340 module 2 assignment web page.
+*/
+
+/* Global font size settings */
+html, body {
+    font-size: 16px;
+}
+
+/* Typography weights and line height */
+p {
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+
+/* Custom classes */
+.intro {
+    text-indent: 2em;
+}
+
+.sentence {
+    font-style: italic;
+}
+
+/* Address and Link Styling */
+address {
+    text-align: center;
+}
+
+address a {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #4F3674;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+    background-color: #D6A800;
+}
+
+address a:visited {
+    color: #36254F;
+}
