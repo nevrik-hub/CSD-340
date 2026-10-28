@@ -1,0 +1,77 @@
+/* 
+    Title: Zankl_Mod3_3.css
+    Author: Nicholas Zankl
+    Date: November 1, 2026
+    Description: Stylesheet for Assignment 3.3
+*/
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    float: left; /* Ensures the title spans across the top properly */
+}
+
+.left-div {
+    width: 45%;
+    float: left;
+}
+
+.right-div {
+    width: 45%;
+    float: right;
+}
+
+h3 {
+    font-weight: 500;
+    margin-top: 0;
+}
+
+ol {
+    font-weight: 300;
+}
+
+.card-solid {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.book-list {
+    list-style-position: inside;
+    padding: 10px;
+    margin: 0;
+}
+
+.card-dashed {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.learned-list {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    padding: 10px;
+    margin: 0;
+}
+
+.bottom-div {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.bottom-div a {
+    text-decoration: none;
+}
+
+.bottom-div a:hover {
+    text-decoration: underline;
+}

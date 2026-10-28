@@ -1,0 +1,68 @@
+/*
+    Title: Assignment 4.2 - Build a Web Page Exercise, Part 4
+    Author: Nicholas Zankl
+    Date: October 28, 2026
+    Description: CSS stylesheet providing layout, 3-column CSS Grid gallery styling, RGBA colors, and typography.
+*/
+
+/* Container & Typography */
+#container {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(184, 61, 0, 1);
+}
+
+h3 {
+    text-align: center;
+    color: rgba(160, 50, 0, 0.95);
+}
+
+/* Image Gallery CSS Grid */
+#image-gallery {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid rgba(184, 61, 0, 1);
+}
+
+.gallery-item {
+    border-right: 1px solid rgba(184, 61, 0, 1);
+    padding: 15px;
+}
+
+.gallery-item:last-child {
+    border-right: none;
+}
+
+/* Figure & Image Styling */
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+figure img {
+    max-width: 150px;
+    height: auto;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(175, 55, 0, 0.85);
+    margin-top: 8px;
+}
+
+/* Landing Page Link Positioning */
+.landing-link-container {
+    text-align: right;
+    margin-top: 150px;
+    padding-right: 20px;
+}
+
+.landing-link {
+    color: rgba(0, 0, 255, 1);
+    text-decoration: underline;
+}

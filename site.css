@@ -1,0 +1,68 @@
+/*
+    Title: site.css
+    Author: Nicholas Zankl
+    Date: November 1, 2026
+    Description: Main stylesheet for CSD 340 landing page
+*/
+
+/* Font setup matching clean header & body style */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Container styling per specification */
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Heading styles with cohesive color scheme */
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+    background-color: #c0392b; /* Vibrant crimson heading bar */
+    color: #ffffff;            /* High contrast text */
+    border: 1px solid #D6A800; /* Required gold border */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Horizontal rule divider */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-bottom: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Anchor tag states (matching color scheme) */
+a {
+    color: #8b0000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #5c0000;
+}
