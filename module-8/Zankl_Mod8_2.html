@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Title: Assignment 8.2 - Build a Web Page Exercise, Part 6
+        Author: Nicholas Zankl
+        Date: November 29, 2026
+        Description: HTML document implementing CSS tables, forms, cards, and fixed footers.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Zankl_Mod8_2.css">
+</head>
+<body>
+
+    <header>
+        <h1>Assignment 8.2: Build a Web Page - Part 6</h1>
+    </header>
+
+    <div id="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div id="container">
+        <!-- Top 5 Favorite Movies Card -->
+        <div class="card">
+            <div class="card-title">
+                Top 5 Favorite Movies
+            </div>
+            <div class="card-content">
+                <table id="movies">
+                    <thead>
+                        <tr>
+                            <th>Movie Name</th>
+                            <th>Two Characters</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>The Matrix</td>
+                            <td>
+                                <ul>
+                                    <li>Neo</li>
+                                    <li>Morpheus</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Inception</td>
+                            <td>
+                                <ul>
+                                    <li>Dom Cobb</li>
+                                    <li>Arthur</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Interstellar</td>
+                            <td>
+                                <ul>
+                                    <li>Joseph Cooper</li>
+                                    <li>Amelia Brand</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Blade Runner</td>
+                            <td>
+                                <ul>
+                                    <li>Rick Deckard</li>
+                                    <li>Roy Batty</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Star Wars: A New Hope</td>
+                            <td>
+                                <ul>
+                                    <li>Luke Skywalker</li>
+                                    <li>Princess Leia</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Top 5 Favorite Foods Card -->
+        <div class="card">
+            <div class="card-title">
+                Top 5 Favorite Foods
+            </div>
+            <div class="card-content">
+                <ol>
+                    <li><a href="https://order.raisingcanes.com/location/raising-canes-1078-3/menu/combos/the-caniac-combo" target="_blank">Raising Cane's Chicken Finger Combo</a></li>
+                    <li><a href="https://www.texasroadhouse.com/location/469-edwardsvilleil/menu/just-for-starters/cactus-blossom" target="_blank">Texas Roadhouse Cactus Blossom</a></li>
+                    <li><a href="https://www.redlobster.com/menu/seafood-boils/mariners-seafood-boil" target="_blank">Mariner's Seafood Boil</a></li>
+                    <li><a href="https://www.wafflehouse.com/nutrition/waffles/" target="_blank">Waffle House Waffles</a></li>
+                    <li><a href="https://shiversfc.com/" target="_blank">Shiver's Flavor of the Day</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            &copy; 2026 Zankl | <a href="../index.html">back to Landing Page</a>
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+/*
+    Title: Assignment 8.2 - Build a Web Page Exercise, Part 6
+    Author: Nicholas Zankl
+    Date: November 29, 2026
+    Description: CSS stylesheet incorporating table styling, fixed footer updates, and card layouts.
+*/
+
+/* Header Styling */
+header {
+    background-color: rgba(184, 61, 0, 1);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+/* Navigation Bar Styling */
+#navbar {
+    overflow: hidden;
+    background-color: rgba(50, 50, 50, 1);
+    border-bottom: 15px solid rgba(184, 61, 0, 1);
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: rgba(184, 61, 0, 0.85);
+    color: white;
+}
+
+/* Container & Card Layout */
+#container {
+    margin: 2% 5% 100px 5%;
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: rgba(184, 61, 0, 1);
+    font-weight: 400;
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+/* Table Styling for Movies */
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgba(184, 61, 0, 1);
+    color: white;
+    padding-left: 8px;
+}
+
+#movies td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(184, 61, 0, 1);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    float: left;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
