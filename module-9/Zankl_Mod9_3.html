@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Title: Assignment 9.3 - JavaScript Exercise, Part 1
+    Author: Nicholas Zankl
+    Date: December 6, 2026
+    Description: HTML document implementing JavaScript variables and interactive span text replacement based on personal professional background.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="../site.css">
+    <script>
+        var firstVariableValue = "Ghidra";
+        var secondVariableValue = "honeypots";
+        var thirdVariableValue = "JavaScript";
+        var fourthVariableValue = "infrastructure";
+    </script>
+</head>
+<body>
+    <div id="container">
+        <!-- Main Header -->
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+        <h2>My Security Engineering Journey</h2>
+
+        <!-- Paragraph 1 (First Person, 3 sentences) -->
+        <p>
+            As a junior security software engineer with a strong foundation in cyber operations, I constantly look for hidden vulnerabilities. During my technical analysis work, I meticulously review low-level binaries using <span id="span1">_____</span> to uncover critical execution flaws. This disciplined process requires me to pay close attention to detail and understand low-level architecture.
+        </p>
+
+        <!-- Paragraph 2 (First Person, 3 sentences) -->
+        <p>
+            Transitioning from binary analysis to defensive system design, I expanded my focus toward active network engineering. In my cloud security projects, I configured and deployed virtualized AWS <span id="span2">_____</span> to monitor unauthorized access attempts. Managing these environments allowed me to analyze real threat actor behavior while protecting core systems.
+        </p>
+
+        <!-- Paragraph 3 (First Person, 3 sentences) -->
+        <p>
+            Looking ahead, I continue advancing my technical competencies across modern software development and AI security. By combining my hands-on practice in <span id="span3">_____</span> with secure coding principles, I build highly resilient applications. My goal is to apply a robust purple-team mindset to defend every layer of digital <span id="span4">_____</span>.
+        </p>
+
+        <!-- Interactive Buttons -->
+        <p>
+            <button type="button" onclick="document.getElementById('span1').innerHTML = firstVariableValue">Ghidra</button>
+            <button type="button" onclick="document.getElementById('span2').innerHTML = secondVariableValue">honeypots</button>
+            <button type="button" onclick="document.getElementById('span3').innerHTML = thirdVariableValue">JavaScript</button>
+            <button type="button" onclick="document.getElementById('span4').innerHTML = fourthVariableValue">infrastructure</button>
+        </p>
+
+        <p><a href="../index.html">Back to Landing Page</a></p>
+    </div>
+</body>
+</html>

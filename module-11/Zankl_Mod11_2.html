@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Title: Assignment 11.2 - JavaScript Exercise, Part 3
+    Author: Nicholas Zankl
+    Date: December 13, 2026
+    Description: HTML document implementing an interactive JavaScript To-Do List with array manipulation, alerts, and dynamic display updates.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="../site.css">
+    <style>
+        /* Custom styling for the To-Do list application */
+        .todo-input-group {
+            margin: 20px 0;
+        }
+        .todo-input-group input[type="text"] {
+            padding: 8px;
+            width: 260px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .todo-input-group button {
+            padding: 8px 15px;
+            margin-right: 5px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .todo-input-group button:hover {
+            background-color: #004494;
+        }
+        #todo-display {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 15px;
+            min-height: 60px;
+        }
+        #todo-display ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+    </style>
+    <script>
+        // Global array to store To-Do items
+        var todoArray = [];
+
+        // Function for displaying the contents of the array
+        function displayTodoList() {
+            var displayArea = document.getElementById("todo-display");
+            if (todoArray.length === 0) {
+                displayArea.innerHTML = "<p>Your To-Do list is currently empty.</p>";
+                return;
+            }
+            var htmlList = "<ul>";
+            for (var i = 0; i < todoArray.length; i++) {
+                htmlList += "<li>" + todoArray[i] + "</li>";
+            }
+            htmlList += "</ul>";
+            displayArea.innerHTML = htmlList;
+        }
+
+        // Function for adding an element to the array
+        function addTodoItem() {
+            var inputField = document.getElementById("todoInput");
+            var itemText = inputField.value.trim();
+
+            if (itemText === "") {
+                alert("Please enter a valid task before clicking Add.");
+                return;
+            }
+
+            todoArray.push(itemText);
+            alert("Added task: " + itemText);
+            inputField.value = ""; // Clear input box
+            displayTodoList();
+        }
+
+        // Function for deleting the last element in the array
+        function deleteLastTodoItem() {
+            if (todoArray.length === 0) {
+                alert("The To-Do list is already empty. Nothing to delete.");
+                return;
+            }
+
+            var removedItem = todoArray.pop();
+            alert("Deleted last entry: " + removedItem);
+            displayTodoList();
+        }
+
+        // Function for sorting the array
+        function sortTodoList() {
+            if (todoArray.length <= 1) {
+                alert("Not enough items to sort.");
+                return;
+            }
+
+            todoArray.sort();
+            alert("The To-Do list has been successfully sorted alphabetically!");
+            displayTodoList();
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <!-- Main Header -->
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+        <h2>Interactive To-Do List Application</h2>
+
+        <p>Enter a task below and use the buttons to add items to your list, delete the last entry, or sort your tasks alphabetically.</p>
+
+        <!-- Input Box and Three Required Buttons -->
+        <div class="todo-input-group">
+            <input type="text" id="todoInput" placeholder="Enter a new task...">
+            <button type="button" onclick="addTodoItem()">Add</button>
+            <button type="button" onclick="deleteLastTodoItem()">Delete Last Entry</button>
+            <button type="button" onclick="sortTodoList()">Sort</button>
+        </div>
+
+        <!-- Display Area -->
+        <h3>Things To Do</h3>
+        <div id="todo-display">
+            <p>Your To-Do list is currently empty.</p>
+        </div>
+
+        <p style="margin-top: 30px;"><a href="../index.html">Back to Landing Page</a></p>
+    </div>
+</body>
+</html>

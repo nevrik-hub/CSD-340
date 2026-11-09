@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Title: Assignment 10.3 - JavaScript Exercise, Part 2
+    Author: Nicholas Zankl
+    Date: November 8, 2026
+    Description: HTML document implementing JavaScript event handling with mouseover and mouseout events using custom security graphics.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Main Header -->
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+        <h2>Interactive Security & Infrastructure Showcase</h2>
+
+        <p>Hover your mouse over the security graphics and text blocks below to observe JavaScript event handling in action:</p>
+
+        <!-- Security Shield Interactive Hover Event -->
+        <div style="margin: 20px 0;">
+            <a href="#"
+               onmouseover="secShield.src='12.png';"
+               onmouseout="secShield.src='11.png';"
+            >
+                <img border="0" name="secShield" src="11.png" alt="Security Shield Status" width="120" height="120">
+            </a>
+        </div>
+
+        <div onmouseover="this.style.color='#0056b3';"
+             onmouseout="this.style.color='black';"
+             style="margin-bottom: 20px; font-weight: bold;">
+            Run your mouse over this text or the security shield above to trigger dynamic changes.
+        </div>
+
+        <!-- Server Infrastructure Interactive Hover Event -->
+        <div style="margin: 20px 0;">
+            <a href="#"
+               onmouseover="serverStatus.src='22.png';"
+               onmouseout="serverStatus.src='21.png';"
+            >
+                <img border="0" name="serverStatus" src="21.png" alt="Server Infrastructure Status" width="140" height="120">
+            </a>
+        </div>
+
+        <div onmouseover="this.style.color='#0056b3';"
+             onmouseout="this.style.color='black';"
+             style="margin-bottom: 20px; font-weight: bold;">
+            Run your mouse over the server rack or text to alter the display.
+            <br />
+            Right-click and select View Source for more details.
+        </div>
+
+        <p style="margin-top: 30px;"><a href="../index.html">Back to Landing Page</a></p>
+    </div>
+</body>
+</html>
